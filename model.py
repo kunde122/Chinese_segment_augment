@@ -4,12 +4,13 @@
 # @Author  : zhanzecheng
 # @File    : model.py
 # @Software: PyCharm
+https://www.jianshu.com/p/e9313fd692ef
 """
 import math
 '''
 1.功能：判断两个词是否可以结合为一个新词，具体：计算两个词a,b的互信息H，计算a,b的左右熵left,right
 计算score=[H+min(left,right)]*P,最终得到每对词的分数(a,b,score)，按score从大到小排序
-2.词a,b，c选自新加入的文档（word_finish标记）
+2.词a,b，c选自新加入的文档（word_finish标记）,互信息、左右熵的计算均是在新文档中统计的
 3.isback方便计算左熵
 '''
 
